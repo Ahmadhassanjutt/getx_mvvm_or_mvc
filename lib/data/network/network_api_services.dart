@@ -1,13 +1,19 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 
 import 'package:getx_and_mvvm_or_mvc/data/network/base_api_services.dart';
 import '../app_exceptions.dart';
+import 'package:flutter/foundation.dart';
 
 class NetworkApiServices extends BaseApiServices {
 
   @override
   Future<dynamic> getApi(String url) async {
+
+    if (kDebugMode) {
+      print(url);
+    }
 
     dynamic responseJson;
 
@@ -30,6 +36,11 @@ class NetworkApiServices extends BaseApiServices {
   @override
   Future<dynamic> postApi(String url, dynamic data) async {
 
+    if (kDebugMode) {
+      print(url);
+      print(data);
+    }
+
     dynamic responseJson;
 
     try {
@@ -37,8 +48,7 @@ class NetworkApiServices extends BaseApiServices {
           .post(
         Uri.parse(url),
         body: data,
-      )
-          .timeout(const Duration(seconds: 10));
+      ).timeout(const Duration(seconds: 10));
 
       responseJson = returnResponse(response);
 
