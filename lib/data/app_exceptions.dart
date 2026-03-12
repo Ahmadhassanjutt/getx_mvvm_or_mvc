@@ -23,3 +23,11 @@ class RequestTimeOut extends AppExceptions{
 class ServerException extends AppExceptions{
   ServerException([String? message]): super(message, "Internal Server Error");
 }
+
+class InvalidUrl extends AppExceptions{
+  InvalidUrl([String? message]): super(message, "Invalid URL");
+}
+
+class FetchDataException extends AppExceptions{
+  FetchDataException([String? message]): super(message, "");
+}
