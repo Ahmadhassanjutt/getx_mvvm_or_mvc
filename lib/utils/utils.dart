@@ -19,7 +19,7 @@ class Utils {
     Fluttertoast.showToast(
       msg: message,
       toastLength: Toast.LENGTH_SHORT,
-      gravity: ToastGravity.CENTER,
+     // gravity: ToastGravity.CENTER,
       timeInSecForIosWeb: 1,
       backgroundColor: AppColor.redColor,
       textColor: AppColor.whiteColor,
@@ -27,6 +27,17 @@ class Utils {
     );
   }
 
+  static  toastMessageCenter(String message) {
+    Fluttertoast.showToast(
+      msg: message,
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.CENTER,
+      timeInSecForIosWeb: 1,
+      backgroundColor: AppColor.redColor,
+      textColor: AppColor.whiteColor,
+      fontSize: 16.0,
+    );
+  }
   static snackbar(String title, String message) {
      Get.snackbar(
       title,
