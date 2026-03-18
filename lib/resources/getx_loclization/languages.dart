@@ -9,6 +9,11 @@ class Languages extends Translations {
           "email" : "Enter Email",
           "internet_exception" : "You are unable to show results\n Please check your data\nconnection",
           "general_exception" : "We're unable to process your request at the moment.\n Please try again later.",
+          "welcome_back" : "Welcome\nback",
+          "login_screen" : "Login Screen",
+          "email_hint" : "Email",
+          "password_hint" : "Password",
+          "login" : "Login",
          },
 
     'ur_PK': {
