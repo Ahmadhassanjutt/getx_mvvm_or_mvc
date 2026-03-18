@@ -9,4 +9,9 @@ class AppColor {
   static const Color greenColor = Color(0xFF00FF00);
   static const Color blueColor = Color(0xFF0000FF);
   static const Color yellowColor = Color(0xFFFFFF00);
+  static const Color primaryColor = Color(0xFF6200EE);
+  static const Color primaryButtonColor = Color(0xFF6200EE);
+  static const Color primaryTextColor = Color(0xFF6200EE);
+
+
 }
