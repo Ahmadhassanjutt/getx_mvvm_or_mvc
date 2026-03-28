@@ -74,7 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     controller: loginController.passwordController.value,
                     focusNode: loginController.passwordFocusNode.value,
                     obscureText: true,
-                    obscuringCharacter: "A",
+                    obscuringCharacter: "y",
                     validator: (value) {
                       if (value!.isEmpty) {
                         Utils.snackbar(
