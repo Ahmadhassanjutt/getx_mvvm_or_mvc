@@ -27,7 +27,7 @@ class Utils {
     );
   }
 
-  static  toastMessageCenter(String message) {
+  static toastMessageCenter(String message) {
     Fluttertoast.showToast(
       msg: message,
       toastLength: Toast.LENGTH_SHORT,

@@ -6,9 +6,9 @@ import 'package:getx_and_mvvm_or_mvc/resources/components/general_exception.dart
 import 'package:getx_and_mvvm_or_mvc/resources/components/internet_exception_widget.dart';
 import 'package:getx_and_mvvm_or_mvc/resources/components/round_button.dart';
 import 'package:getx_and_mvvm_or_mvc/utils/utils.dart';
-import 'package:getx_and_mvvm_or_mvc/view/view_models/services/splash_services.dart';
 
 import '../data/app_exceptions.dart';
+import '../view_models/services/splash_services.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
